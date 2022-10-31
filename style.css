@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1.25em;
+  background: linear-gradient(76deg, #d9b48f 34%, #b3c7d6 49%, #d9b48f 64%) no-repeat;
+  background-size: contain;
+}
+
+li {
+  color: #2460a7;
+}
+
+li:hover {
+  opacity: 0.5;
+}
+
+li:active {
+  opacity: 0.5;
+  text-shadow: 0px 0px 10px 10px white;
+}
+
+ul {
+  list-style-image: url("img/mini_rotating_skull_bulletpoint.png");
+}
+
+.disc {
+  width: min(100%, 700px);
+  height: min(100%, 700px);
+  margin: auto;
+  display: block;
+  position: relative;
+  -webkit-animation: rotate 10s linear infinite;
+          animation: rotate 10s linear infinite;
+  border-radius: 1000px;
+}
+
+.main_container_disc {
+  position: relative;
+  background-image: linear-gradient(76deg, rgba(95, 112, 190, 0.5887171713) 34%, rgba(204, 139, 224, 0.9454587443) 49%, rgba(112, 222, 191, 0.6420879578) 64%);
+  border-radius: 1000px;
+  width: min(100%, 700px);
+  height: min(100%, 700px);
+  margin: auto;
+  border: lightgrey 3px solid;
+  z-index: -2;
+}
+
+.main_container_disc::before {
+  content: " ";
+  background-color: white;
+  border-radius: 1000px;
+  width: min(15%, 200px);
+  height: min(15%, 200px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  text-align: center;
+  border: 5px solid black;
+  width: min(50%, 500px);
+  margin: auto;
+}
+
+.main_listing {
+  border: black solid 1px;
+  width: min(70%, 800px);
+  margin: auto;
+  padding: 2em;
+  overflow: scroll;
+  height: 200px;
+  background: #85b3d1;
+  border: 5px solid brown;
+}
+
+.main_controller {
+  margin: auto;
+  width: min(90%, 400px);
+  background-image: url(img/wood_pattern.jpg);
+  border-radius: 1.25em;
+  box-shadow: 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main_controller > .control {
+  filter: invert(8%) sepia(85%) saturate(382%) hue-rotate(352deg) brightness(92%) contrast(98%);
+}
+
+.main_controller > .control:hover {
+  filter: invert(27%) sepia(18%) saturate(1968%) hue-rotate(343deg) brightness(104%) contrast(90%);
+}
+
+.-marginbottom_20px {
+  margin-bottom: 1.25em;
+}
+
+.-midwidth_visible {
+  display: none;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
