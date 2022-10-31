@@ -1,0 +1,26 @@
+.sotd-container {
+  margin-top: 20px;
+  .ship-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .ship-desc {
+    margin: 10px 0px;
+    padding: 0px 30px;
+    .ship-title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .sotd-container {
+    .ship-desc {
+      padding: 0;
+      .ship-title {
+        font-size: 24px;
+      }
+    }
+  }
+}

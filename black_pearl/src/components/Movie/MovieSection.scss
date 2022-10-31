@@ -1,0 +1,37 @@
+.movie-elements-container {
+  margin: 30px;
+  display: flex;
+  overflow: auto;
+  .movie-card {
+    width: 145px;
+    height: auto;
+    margin-right: 10px;
+    .img-container {
+      width: 145px;
+      .movie-img {
+        width: inherit;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    .movie-title {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .movie-elements-container {
+    margin: 30px 0px;
+    .movie-card {
+      width: 250px;
+      margin-right: 20px;
+      .img-container {
+        width: 250px;
+      }
+      .movie-title {
+        font-size: 18px;
+      }
+    }
+  }
+}

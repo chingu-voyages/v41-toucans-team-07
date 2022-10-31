@@ -1,0 +1,51 @@
+header {
+  color: white;
+  width: 100vw;
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
+    .header-img {
+      max-width: 100vw;
+      flex: 1 1 0;
+      width: 0;
+    }
+    .title-container {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1 1 0;
+      width: 0;
+      .title {
+        font-family: Caribbean Caps;
+      }
+      .web-desc {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    .header-container {
+      flex-direction: row;
+      .title-container {
+        text-align: left;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: flex-start;
+        .title {
+          font-size: 72px;
+        }
+      }
+    }
+  }
+}
