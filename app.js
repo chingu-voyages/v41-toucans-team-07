@@ -4,9 +4,13 @@ const cover=document.querySelector(`.disc`)
 const playBtn=document.querySelector(`#play`)
 const pauseBtn=document.querySelector(`#pause`)
 const nextBtn=document.querySelector(`#next`)
+const stopBtn=document.querySelector(`#stop`)
 const previousBtn=document.querySelector(`#previous`)
 const music_container=document.querySelector(`.main_container_disc`)
 const title=document.querySelector(`.title`)
+const progress = document.getElementById('progress');
+const disc = document.querySelector('.disc');
+const controller_container=document.querySelector(`.main_controller`)
 
 
 // Song titles
@@ -37,15 +41,23 @@ function loadImg(disc_cover){
 // Play song
 function playSong() {
   music_container.classList.add('play');
+  controller_container.classList.add('play');
   playBtn.src="img/pause.svg";
   audio.play();
+
+  
 }
 
 // Pause song
 function pauseSong() {
   music_container.classList.remove('play');
+  controller_container.classList.remove('play');
   playBtn.src="img/play.svg";
   audio.pause();
+  
+
+
+
 }
 
 // Previous song
@@ -75,7 +87,21 @@ function nextSong() {
   loadImg(disc_covers[randompic]);
   playSong();
 }
+// Stop song
+ function stopSong(){
+  music_container.classList.remove('play');
+  controller_container.classList.remove('play');
+  stopBtn.animate([
+    { right: '10px' },
+    { left: '10px' }
+  ], {
+    duration: 500,
+    iterations: 1,
+  })
 
+  audio.pause();  
+  audio.currentTime = 0
+ }
 // Event listeners
 playBtn.addEventListener('click', () => {
   const isPlaying = music_container.classList.contains('play');
@@ -86,11 +112,20 @@ playBtn.addEventListener('click', () => {
     playSong();
   }
 });
-
+// Update progress bar
+function updateProgress(e) {
+  const { duration, currentTime } = e.srcElement;
+  const progressPercent = (currentTime / duration) * 100;
+  progress.style.width = `${progressPercent}%`;
+  
+}
 // Change song
 previousBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 
 
+// Time/song update
+musicsong.addEventListener('timeupdate', updateProgress);
 
-
+//stop song
+stopBtn.addEventListener('click', stopSong);

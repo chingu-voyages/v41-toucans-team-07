@@ -11,8 +11,10 @@
 </head>
 <body>
   <main>
-<section class="main_listing -marginbottom_20px">
-<ul>
+
+<details class=" -marginbottom_20px">
+<summary><h2><strong>Song List</strong></h2></summary>
+<ul class="main_listing">
     <li id="song_0">BILLY BOY</li>
     <li id="song_1">BOUND FOR THE RIO GRANDE</li>
     <li id="song_2">GOOD-BYE, FARE YE WELL</li>
@@ -34,12 +36,16 @@
     <li id="song_18">HANGING JOHNNY</li>
     <li id="song_19">HILO SOMEBODY</li>
 </ul>
-</section>
+</details>
 <audio id="audio" ></audio>
-<h2 class="title -center -marginbottom_20px"></h2>
 
+<h2 class="title -marginbottom_20px"></h2>
+<div class="progress-container" id="progress-container">
+  <div class="progress" id="progress"></div>
+</div>
 <div class="main_controller -marginbottom_20px">
   <img class="control" id="previous" src="img/previous.svg" height='60' width='60' alt="#">
+  <img class="control" id="stop" src="img/stop.svg" height='60' width='60' alt="#">
   <img class="control" id="play"  src="img/play.svg" height='60' width='60' alt="#">
   <img class="control" id="next" src="img/next.svg" height='60' width='60' alt="#">
 </div>
