@@ -17,6 +17,8 @@ This is Webapp built for the fans of Pairates Of Carebbian.
 
 6. run `npm install` to install the dependencies.
 
+7. run `npm start` to open in server/browser.
+
 ## Creating or updating Features
 
 1. Create a branch of the clone repo using `git branch <name-of-the-new-branch>` in order to work on different features.
