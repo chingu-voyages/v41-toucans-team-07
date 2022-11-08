@@ -13,7 +13,7 @@ This is Webapp built for the fans of Pairates Of Carebbian.
 
 4.Clone the project to your local machine by running `git clone` copy the `SSH Key` from the `code` button on the forked repo.
  
-5. Navigate to the project directory `cd v41-toucans-team-07` and `cd black_pearl` to get into the project file.
+5. Navigate to the project directory `v41-toucans-team-07` and `cd black_pearl` to get into the project file.
 
 6. run `npm install` to install the dependencies.
 
