@@ -9,7 +9,7 @@ export const movies = [
   {
     id: 2,
     title: "Pirates of the Caribbean: Dead Man's Chest (2006)",
-    img: 'https://lumiere-a.akamaihd.net/v1/images/r_piratesofthecaribbeandeadmanschest_header_mobile_a53051a8.jpeg?region=0,0,640,320',
+    img: 'http://images2.fanpop.com/images/photos/7700000/Dead-Man-s-Chest-pirates-of-the-caribbean-7783950-2443-1829.jpg',
     desc: '',
   },
   {
