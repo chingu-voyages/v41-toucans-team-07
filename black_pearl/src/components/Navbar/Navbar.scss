@@ -1,5 +1,5 @@
 nav {
-  background-color: var(--clr-black);
+  background-color: #000;
   color: #fff;
   box-shadow: #eee;
 
@@ -7,10 +7,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
 
     .logo {
-      width: 8%;
+      width: 80px;
       border-radius: 30%;
       // font-family: Caribbean Caps;
       // height: 40px;
