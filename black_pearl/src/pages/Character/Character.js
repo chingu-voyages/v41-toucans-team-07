@@ -1,10 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CharacterList from './CharacterList';
 const Charcter = () => {
   return (
     <div style={{ color: 'red', textAlign: 'center' }}>
-      <h2>This is Charcters</h2>
-      <Link to="/">homepage</Link>
+      {CharacterList.map((charcater) => {
+        return (
+          <div>
+            <img src={charcater.img} alt="" />
+            <h2>This is {charcater.name}</h2>
+          </div>
+        );
+      })}
     </div>
   );
 };
