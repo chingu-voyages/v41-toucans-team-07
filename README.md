@@ -33,4 +33,4 @@ This is Webapp built for the fans of Pairates Of Carebbian.
 ![](./Pirate%20of%20the%20Carribean%20wireframe.png)
 
 ## Live Website(url)
-(https://v41-toucans-team-07.vercel.app/)
+(https://black--pearl.vercel.app/)
