@@ -1,7 +1,7 @@
-import React from "react";
-import "./MovieSection.scss";
-import { movies } from "./movieData";
-import MovieListComponents from "./MovieList/MovieListComponents";
+import React from 'react';
+import './MovieSection.scss';
+import { movies } from './movieData';
+import MovieListComponents from './MovieList/MovieListComponents';
 
 function MovieSection() {
   const moviesElement = movies.map((item) => {

@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { movies } from '../../components/Movie/movieData';
+import { movies } from '../Movie/movieData';
 import MenuItems from '../MenuItems/MenuItems';
 import './moviepagecomponent.scss';
 
