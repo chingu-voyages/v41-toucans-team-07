@@ -1,12 +1,12 @@
-import React from "react";
-import "./Header.scss";
-import header_img from "../../assets/hero-square.jpg";
+import React from 'react';
+import './Header.scss';
+import header_img from '../../assets/blackPearl.png';
 
 function Header() {
   return (
     <header>
       <div className="header-container">
-        <img src={header_img} alt="" className="header-img" />
+        {/* <img src={header_img} alt="" className="header-img" /> */}
         <div className="title-container">
           <h1 className="title">The Black Pearl</h1>
           <h2 className="web-desc">
