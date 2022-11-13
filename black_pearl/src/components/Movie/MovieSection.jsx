@@ -10,8 +10,6 @@ function MovieSection() {
     );
   });
 
-  console.log(moviesElement);
-
   return (
     <section>
       <div className="section-container">
