@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import Sound from 'react-sound';
-import Ashish from './Ashish.mp3';
 import audio from './music';
 
-// preserves value
-// DOES NOT trigger re-render
-// target DOM nodes/elements
 const PirateMusic = (handleSongFinishedPlaying) => {
   const [isPlaying, setIsPlaying] = useState(false);
   return (
@@ -24,8 +20,6 @@ const PirateMusic = (handleSongFinishedPlaying) => {
         playStatus={isPlaying ? Sound.status.PLAYING : Sound.status.STOPPED}
         playFromPosition={300}
         volume={5}
-        // onLoading={handleSongLoading}
-        // onPlaying={handleSongPlaying}
         onFinishedPlaying={handleSongFinishedPlaying}
         loop={true}
         autoLoad={true}

@@ -15,8 +15,8 @@ const App = () => {
         <Route path="/" element={<SharedLayouts />}>
           <Route index element={<LandingPage />} />
           <Route path="/movie" element={<Movie />} />
-          <Route path="/art" element={<Art />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/art" element={<Art />} /> */}
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/character" element={<Charcter />} />
           <Route path="*" element={<Error />} /> {/* <Header /> */}
         </Route>

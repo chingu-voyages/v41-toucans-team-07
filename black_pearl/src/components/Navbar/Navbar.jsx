@@ -3,7 +3,7 @@ import { links } from './navbardata';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.scss';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/hero-square.jpg';
+import logo from '../../assets/hero-square.png';
 
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);

@@ -8,9 +8,6 @@ const MenuItems = ({ title, desc, img }) => {
         className="background-image"
         style={{ backgroundImage: `url(${img})` }}
       />
-      {/* <div className="content">
-        <h3 className="title">{title}</h3>
-      </div> */}
     </div>
   );
 };
